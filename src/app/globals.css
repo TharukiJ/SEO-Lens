@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --color-indigo-glow: #6366f1;
+  --color-cyan-glow: #22d3ee;
+  --color-deep-matte: #050505;
+  
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+  --radius-glass: 16px;
+}
+
+:root {
+  --background: #050505;
+  --foreground: #ffffff;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: var(--shadow-glass);
+  border-radius: var(--radius-glass);
+}
+
+.glass-hover:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+.indigo-glow-box {
+  box-shadow: 0 0 40px -10px rgba(99, 102, 241, 0.2);
+}
+
+.cyan-glow-text {
+  text-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+.antigravity-bg {
+  background: radial-gradient(circle at 50% -20%, #1e1b4b 0%, #050505 60%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e1b4b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #312e81;
+}
