@@ -19,3 +19,15 @@ Most small businesses lose customers because their websites are invisible to sea
 * **Real-time Analytics:** A dynamic **SVG Progress Ring** that calculates a "Health Score" based on technical SEO benchmarks.
 
 ---
+## How it Works (The Logic)
+
+1.  **Request:** The user enters a URL into the glassmorphic search bar.
+2.  **Fetch:** The system triggers a **Next.js Server Action** to fetch the raw HTML of the target site.
+3.  **Audit:** The **Cheerio** engine scans the HTML for:
+    * **Meta Title:** Verification of the site's primary identity.
+    * **H1 Tag:** Checking for a clear main heading for search crawlers.
+    * **Image Alt Text:** Ensuring images are accessible to search bots and screen readers.
+    * **Meta Description:** Verifying the presence of a site summary for search results.
+4.  **Reporting:** The logic calculates a final score and displays a professional audit report.
+
+---
