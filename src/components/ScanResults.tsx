@@ -1,7 +1,7 @@
 "use client";
 
 import { AuditResult } from "@/app/actions";
-import { CheckCircle2, AlertCircle, XCircle, Globe, Link2 } from "lucide-react";
+import { CheckCircle2, AlertCircle, XCircle, Globe } from "lucide-react";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 

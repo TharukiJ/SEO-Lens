@@ -45,7 +45,12 @@ export async function scrapeUrl(url: string): Promise<AuditResult> {
     const totalImages = images.length;
     const imagesWithAlt = images.filter((_, el) => !!$(el).attr("alt")).length;
 
-    const checks: AuditResult["data"]["checks"] = [
+    const checks: {
+      name: string;
+      status: "pass" | "fail" | "warn";
+      value: string;
+      description: string;
+    }[] = [
       {
         name: "Title Tag",
         status: title.length > 0 ? (title.length >= 30 && title.length <= 60 ? "pass" : "warn") : "fail",
@@ -84,10 +89,10 @@ export async function scrapeUrl(url: string): Promise<AuditResult> {
         checks
       }
     };
-  } catch (error: any) {
+  } catch (error) {
     return {
       success: false,
-      error: error.message || "An unexpected error occurred while scanning."
+      error: error instanceof Error ? error.message : "An unexpected error occurred while scanning."
     };
   }
 }

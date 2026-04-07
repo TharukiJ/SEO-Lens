@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Search, Loader2 } from "lucide-react";
+import { Search } from "lucide-react";
 import { scrapeUrl, AuditResult } from "@/app/actions";
 
 interface SearchBarProps {
