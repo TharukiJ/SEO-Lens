@@ -31,3 +31,12 @@ Most small businesses lose customers because their websites are invisible to sea
 4.  **Reporting:** The logic calculates a final score and displays a professional audit report.
 
 ---
+## Tech Stack
+
+* **Frontend:** Next.js 15 (App Router), React 19
+* **Styling:** Tailwind CSS (Custom Antigravity Theme)
+* **Data Parsing:** Cheerio
+* **Icons:** Lucide React
+* **Deployment:** Vercel
+
+---
