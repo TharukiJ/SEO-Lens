@@ -40,3 +40,14 @@ Most small businesses lose customers because their websites are invisible to sea
 * **Deployment:** Vercel
 
 ---
+## File Structure
+
+```text
+├── app/
+│   ├── actions.ts       # The Core Logic (SEO Scraper Engine)
+│   ├── page.tsx          # The Main UI (Antigravity Dashboard)
+│   └── globals.css       # Custom Glassmorphism & Indigo Styles
+├── components/
+│   ├── SearchBar.tsx     # Animated Input Component
+│   └── ScanResults.tsx   # Data Visualization Cards
+└── public/               # Static Assets
