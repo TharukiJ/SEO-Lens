@@ -104,7 +104,7 @@ export default function ScanResults({ result }: ScanResultsProps) {
               <span className={cn(
                 "px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-tighter",
                 check.status === "pass" ? "bg-green-500/20 text-green-500" :
-                check.status === "warn" ? "bg-yellow-500/20 text-yellow-500" : "bg-red-500/20 text-red-500"
+                  check.status === "warn" ? "bg-yellow-500/20 text-yellow-500" : "bg-red-500/20 text-red-500"
               )}>
                 {check.status}
               </span>
