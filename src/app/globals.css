@@ -52,6 +52,10 @@ body {
   text-shadow: 0 0 10px rgba(40, 98, 58, 0.5);
 }
 
+.icon-glow {
+  filter: drop-shadow(0 0 8px currentColor);
+}
+
 @keyframes float {
   0% {
     transform: translateY(0px);

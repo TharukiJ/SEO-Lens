@@ -43,7 +43,7 @@ export default function Home() {
               { icon: Activity, label: "Realtime", desc: "Live audits" }
             ].map((f, i) => (
               <div key={i} className="glass p-6 text-center hover:scale-105 transition-transform duration-300 cursor-default">
-                <f.icon className="w-8 h-8 text-indigo-400 mx-auto mb-3" />
+                <f.icon className="w-8 h-8 text-indigo-400 mx-auto mb-3 icon-glow" />
                 <h3 className="font-bold text-sm mb-1">{f.label}</h3>
                 <p className="text-xs text-gray-500 uppercase tracking-tighter">{f.desc}</p>
               </div>

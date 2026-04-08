@@ -17,7 +17,7 @@ export default function ScanResults({ result }: ScanResultsProps) {
   if (!result.success || !result.data) {
     return (
       <div className="glass p-8 mt-12 bg-red-500/10 border-red-500/20 max-w-2xl w-full text-center">
-        <XCircle className="w-12 h-12 text-red-500 mx-auto mb-4" />
+        <XCircle className="w-12 h-12 text-red-500 mx-auto mb-4 icon-glow" />
         <h2 className="text-xl font-bold mb-2">Scan Failed</h2>
         <p className="text-gray-400">{result.error || "The URL could not be audited."}</p>
       </div>
@@ -64,7 +64,7 @@ export default function ScanResults({ result }: ScanResultsProps) {
         <div className="md:col-span-2 glass p-8 flex flex-col justify-center">
           <div className="flex items-center gap-3 mb-4">
             <div className="p-2 bg-indigo-500/20 rounded-lg">
-              <Globe className="w-6 h-6 text-indigo-400" />
+              <Globe className="w-6 h-6 text-indigo-400 icon-glow" />
             </div>
             <h1 className="text-2xl font-bold truncate max-w-md">{url}</h1>
           </div>
@@ -83,9 +83,9 @@ export default function ScanResults({ result }: ScanResultsProps) {
           <div key={i} className="glass p-6 glass-hover group transition-all">
             <div className="flex items-start justify-between mb-4">
               <div className="flex items-center gap-3">
-                {check.status === "pass" && <CheckCircle2 className="w-5 h-5 text-green-500" />}
-                {check.status === "warn" && <AlertCircle className="w-5 h-5 text-yellow-500" />}
-                {check.status === "fail" && <XCircle className="w-5 h-5 text-red-500" />}
+                {check.status === "pass" && <CheckCircle2 className="w-5 h-5 text-green-500 icon-glow" />}
+                {check.status === "warn" && <AlertCircle className="w-5 h-5 text-yellow-500 icon-glow" />}
+                {check.status === "fail" && <XCircle className="w-5 h-5 text-red-500 icon-glow" />}
                 <h3 className="font-bold text-lg">{check.name}</h3>
               </div>
               <span className={cn(

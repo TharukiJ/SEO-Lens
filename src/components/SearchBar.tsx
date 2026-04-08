@@ -33,7 +33,7 @@ export default function SearchBar({ onResult, onLoading }: SearchBarProps) {
         <div className="absolute -inset-0.5 bg-indigo-500/20 rounded-2xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
         <div className="relative flex items-center glass p-2 gap-2">
           <div className="flex-1 flex items-center px-4">
-            <Search className="w-5 h-5 text-indigo-400 mr-3 opacity-70" />
+            <Search className="w-5 h-5 text-indigo-400 mr-3 icon-glow" />
             <input
               type="text"
               placeholder="Enter website URL (e.g., google.com)"
