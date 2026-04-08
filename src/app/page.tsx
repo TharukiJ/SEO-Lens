@@ -25,9 +25,12 @@ export default function Home() {
           <h1 className="text-6xl md:text-7xl font-extrabold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-500">
             SitePulse SEO
           </h1>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed mb-8">
             Advanced HTML auditing to uncover hidden growth gaps and elevate your search authority.
           </p>
+          <button className="bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-3 rounded-xl font-medium transition-all duration-300 shadow-lg shadow-indigo-900/40 active:scale-95 mx-auto">
+            Guide for You
+          </button>
         </div>
 
         {/* Search Bar Component */}
