@@ -58,7 +58,20 @@ export default function ScanResults({ result }: ScanResultsProps) {
             </svg>
             <span className="absolute text-4xl font-bold">{score}%</span>
           </div>
-          <p className="mt-4 text-gray-400 font-medium uppercase tracking-widest text-sm">Health Score</p>
+          <p className="mt-4 text-gray-400 font-medium uppercase tracking-widest text-sm mb-4">Health Score</p>
+          <div className="w-full mt-auto flex justify-end">
+            <div className="flex flex-col gap-2 text-[9px] font-bold uppercase tracking-widest text-gray-400 bg-white/5 p-3 rounded-xl border border-white/10">
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"></div> Healthy
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 rounded-full bg-yellow-500 shadow-[0_0_8px_rgba(234,179,8,0.6)]"></div> Medium
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.6)]"></div> Risk
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="md:col-span-2 glass p-8 flex flex-col justify-center">
