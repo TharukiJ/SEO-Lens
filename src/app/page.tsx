@@ -4,7 +4,7 @@ import { useState } from "react";
 import SearchBar from "@/components/SearchBar";
 import ScanResults from "@/components/ScanResults";
 import { AuditResult } from "./actions";
-import { Sparkles, BarChart3, ShieldCheck, Zap, Activity } from "lucide-react";
+import { BarChart3, ShieldCheck, Zap, Activity } from "lucide-react";
 
 export default function Home() {
   const [result, setResult] = useState<AuditResult | null>(null);
@@ -21,10 +21,7 @@ export default function Home() {
       <div className="relative z-10 w-full max-w-4xl flex flex-col items-center">
         {/* Header Section */}
         <div className="text-center mb-12 animate-float">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-indigo-500/10 border border-indigo-500/20 rounded-full mb-6">
-            <Sparkles className="w-4 h-4 text-indigo-400" />
-            <span className="text-xs font-bold uppercase tracking-widest text-indigo-300">Antigravity Engine V1.0</span>
-          </div>
+
           <h1 className="text-6xl md:text-7xl font-extrabold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-500">
             SitePulse SEO
           </h1>
