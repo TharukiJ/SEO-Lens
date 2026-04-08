@@ -26,7 +26,6 @@ export default function Home() {
             SitePulse SEO
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            Precision SEO Intelligence<br />
             Advanced HTML auditing to uncover hidden growth gaps and elevate your search authority.
           </p>
         </div>
