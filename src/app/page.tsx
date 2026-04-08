@@ -28,7 +28,7 @@ export default function Home() {
           <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed mb-8">
             Advanced HTML auditing to uncover hidden growth gaps and elevate your search authority.
           </p>
-          <button className="bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-3 rounded-xl font-medium transition-all duration-300 shadow-lg shadow-indigo-900/40 active:scale-95 mx-auto">
+          <button className="bg-transparent border border-white/10 hover:border-white/30 hover:bg-white/5 text-gray-300 hover:text-white px-5 py-2 rounded-full text-xs uppercase tracking-widest font-bold transition-all duration-300 backdrop-blur-md active:scale-95 mx-auto">
             Guide for You
           </button>
         </div>
