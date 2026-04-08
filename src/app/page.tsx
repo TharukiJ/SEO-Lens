@@ -26,7 +26,8 @@ export default function Home() {
             SitePulse SEO
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            High-speed technical auditor. Crawl HTML to identify critical SEO gaps and get an instant health score.
+            Precision SEO Intelligence<br />
+            Advanced HTML auditing to uncover hidden growth gaps and elevate your search authority.
           </p>
         </div>
 
